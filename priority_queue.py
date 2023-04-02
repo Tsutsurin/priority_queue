@@ -16,3 +16,7 @@ def void(queue):
 def size(queue):
     _ = len(queue)
     return _
+
+def max(queue):
+    _ = heapq.nlargest(1, queue)
+    return _

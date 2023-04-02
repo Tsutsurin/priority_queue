@@ -11,7 +11,8 @@ while(buffer == True):
               '3: Добавить элемент\n'
               '4: Удалить элемент\n'
               '5: Показать очередь\n'
-              '6: Выйти\n')
+              '6: Показать максимальный элемент\n'
+              '7: Выйти\n')
     match _:
         case '1':
             print(priority_queue.void(queue))
@@ -24,4 +25,7 @@ while(buffer == True):
         case '5':
             print(queue)
         case '6':
+            print(priority_queue.max(queue))
+        case '7':
             buffer = False
+    print()
