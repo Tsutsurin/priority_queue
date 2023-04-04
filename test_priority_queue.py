@@ -21,7 +21,7 @@ while(buffer == True):
         case '3':
             priority_queue.add_element(queue, int(input('Какой элемент добавить? ')))
         case '4':
-            priority_queue.rem_element(queue)
+            priority_queue.rm_element(queue)
         case '5':
             print(queue)
         case '6':
