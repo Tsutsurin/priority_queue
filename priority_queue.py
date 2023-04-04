@@ -1,10 +1,12 @@
 import heapq
 
-def add_element(queue, _):
-    heapq.heappush(queue, _)
+add_element = lambda queue, _: heapq.heappush(queue, _)
 
-def rem_element(queue):
-    heapq.heappop(queue)
+rm_element = lambda queue: heapq.heappop(queue)
+
+size = lambda queue: len(queue)
+
+max = lambda queue: heapq.nlargest(1, queue)
 
 def void(queue):
     _ = len(queue)
@@ -12,11 +14,3 @@ def void(queue):
         return 'Очередь пуста'
     else:
         return 'Очередь не пуста'
-
-def size(queue):
-    _ = len(queue)
-    return _
-
-def max(queue):
-    _ = heapq.nlargest(1, queue)
-    return _
